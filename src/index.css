@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins&display=swap');
+
+
+.bgImage{
+  
+  background-image: url("../public/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  height: 100vh;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.box{
+  animation: typing 5s steps(19), blink .5s step-end infinite alternate-reverse;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
+}
